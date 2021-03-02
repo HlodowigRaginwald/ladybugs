@@ -43,7 +43,7 @@
         width="66"
         height="66"
         :fill="color"
-        :class="$style.animFill"
+        :class="$style.animColor"
         stroke-width="5"
       />
       <circle cx="70" cy="50" r="8" />
