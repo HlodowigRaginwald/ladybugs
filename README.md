@@ -1,6 +1,9 @@
-# ladybug
+# Ladybugs
+
+Simple project where you can see some ladybugs and change their color by clicking on it.
 
 ## Project setup
+
 ```
 npm install
 ```
@@ -16,9 +19,11 @@ npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Configuration
+
+You can change the number of ladybugs by setting the `VUE_APP_LADYBUGS_NUMBER`. By default the value is 5.
