@@ -12,6 +12,7 @@
 
 <script>
 import ladybugs from "@/ladybugs";
+import "./cam";
 
 export default {
   data() {

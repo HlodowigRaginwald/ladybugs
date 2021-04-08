@@ -57,6 +57,8 @@
 </template>
 
 <script>
+import { onMotion } from "../../cam";
+
 export default {
   props: {
     x: Number,
@@ -70,6 +72,22 @@ export default {
     angleDeg() {
       return (360 * this.angle) / (2 * Math.PI);
     },
+  },
+  created() {
+    onMotion((hasColision) => {
+      const value = hasColision({
+        x: this.x,
+        y: this.y,
+        width: this.size,
+        height: this.size,
+        containerWidth: window.innerWidth,
+        containerHeight: window.innerHeight,
+      });
+
+      if (value) {
+        this.$emit("click");
+      }
+    });
   },
 };
 </script>

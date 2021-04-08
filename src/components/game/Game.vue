@@ -21,7 +21,7 @@ import ladybugs from "@/ladybugs";
 import Ladybug from "./Ladybug.vue";
 
 const FPS = 60;
-const LadybugSize = 100;
+const LadybugSize = 150;
 
 export default {
   components: { Ladybug },

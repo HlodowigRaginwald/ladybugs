@@ -13,7 +13,7 @@ module.exports = {
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "warn",
     "no-unused-vars": process.env.NODE_ENV === "production" ? "error" : "warn",
     "vue/no-unused-components": process.env.NODE_ENV === "production" ? "error" : "warn",
-    "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }],
+    "operator-linebreak": [2, "after", { overrides: { "?": "before", ":": "before" } }],
     "no-new": "off",
     "implicit-arrow-linebreak": 0,
     "function-paren-newline": 0,
